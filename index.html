@@ -14,7 +14,7 @@
     <br>
     <p>I'm Khalid Marwan Alharbi and <a href="https://alrieq.github.io/CV" target="_blank">this is</a> a previous website that I made and published on github</p>
     <br>
-    <ul>
+    <ul class="list">
         <li><a href="#CPIT405">CPIT-405</a></li>
         <li><a href="#CPIT470">CPIT-470</a></li>
         <li><a href="#CPIS428">CPIS-428</a></li>
@@ -32,51 +32,63 @@
         </tr>
         <tr>
             <td class="column">Sunday</td>
-            <td>CPIT-470</td>
+            <td><a href="#CPIT470">CPIT-470</a></td>
             <td></td>
-            <td>CPIT-405</td>
+            <td><a href="#CPIT405">CPIT-405</a></td>
             <td></td>
         </tr>
         <tr>
             <td class="column">Monday</td>
             <td>Senior Project</td>
-            <td>CPIS-428</td>
+            <td><a href="#CPIS428">CPIS-428</a></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td class="column">Tuesday</td>
-            <td>CPIT-470</td>
+            <td><a href="#CPIT470">CPIT-470</a></td>
             <td></td>
-            <td colspan="2">CPIT-405</td>
+            <td colspan="2"><a href="#CPIT405">CPIT-405</a></td>
         </tr>
         <tr>
             <td class="column">Wednesday</td>
             <td></td>
-            <td>CPIS-428</td>
+            <td><a href="#CPIS428">CPIS-428</a></td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td class="column">Thursday</td>
-            <td>CPIT-470</td>
+            <td><a href="#CPIT470">CPIT-470</a></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
     </table>
     <hr>
-    <h1 id="CPIT405">CPIT-405</h1>
+    <h1 id="CPIT405" class="myDIV">CPIT-405</h1>
+    <div class="hide" id="inner">
     <h2>Introduction</h2>
     <p>This is a Web Development Course we will use </p>
-    <ul>
+    <ul class="list">
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
     </ul>
-    <h1 id="CPIT470">CPIT-470</h1>
-    <p>This is a Network Adminstration Course</p>
+</div>
+    <hr>
+    <h1 id="CPIT470" class="myDIV">CPIT-470</h1>
+    <div class="hide"><p>This is a Network Adminstration Course</p></div>
+    
+    <hr>
     <h1 id="CPIS428">CPIS-428</h1>
     <p>This is a Boring Courrse</p>
 </body>
 </html>
+<script>
+    const x = 0;
+    const myButton =document.getElementById('CPIT405');
+    myButton.addEventListener('click', function(){
+        document.getElementById('inner').style.display = "block"
+    })
+</script>

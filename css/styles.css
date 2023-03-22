@@ -32,3 +32,15 @@ table, th, tr, td {
   .doubleLine{
     text-decoration: underline;
   }
+  .list{
+    display: inline-block;
+    text-align: left;
+  }
+  .hide {
+    display: none;
+  }
+  
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+  }
