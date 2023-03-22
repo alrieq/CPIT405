@@ -66,7 +66,7 @@
         </tr>
     </table>
     <hr>
-    <h1 id="CPIT405" class="myDIV">CPIT-405</h1>
+    <h1 id="CPIT405">CPIT-405</h1>
     <div class="hide" id="inner">
     <h2>Introduction</h2>
     <p>This is a Web Development Course we will use </p>
@@ -77,18 +77,53 @@
     </ul>
 </div>
     <hr>
-    <h1 id="CPIT470" class="myDIV">CPIT-470</h1>
-    <div class="hide"><p>This is a Network Adminstration Course</p></div>
+    <h1 id="CPIT470">CPIT-470</h1>
+    <div class="hide" id="inner2">
+        <p>This is a Network Adminstration Course</p>
+    </div>
     
     <hr>
     <h1 id="CPIS428">CPIS-428</h1>
-    <p>This is a Boring Courrse</p>
+    <div class="hide" id="inner3"> 
+       <p>This is a Boring Courrse</p>
+    </div>
 </body>
 </html>
 <script>
-    const x = 0;
+    var x = false;
+    var z = false;
+    var c = false;
     const myButton =document.getElementById('CPIT405');
+    const myButton2 =document.getElementById('CPIT470');
+    const myButton3 =document.getElementById('CPIS428');
     myButton.addEventListener('click', function(){
-        document.getElementById('inner').style.display = "block"
+        if(x == false){
+        document.getElementById('inner').style.display = "block";
+        x =true;
+    }
+        else{
+            document.getElementById('inner').style.display = "none";
+            x=false;
+        }
+    })
+    myButton2.addEventListener('click', function(){
+        if(z == false){
+        document.getElementById('inner2').style.display = "block";
+        z =true;
+    }
+        else{
+            document.getElementById('inner2').style.display = "none";
+            z=false;
+        }
+    })
+    myButton3.addEventListener('click', function(){
+        if(c == false){
+        document.getElementById('inner3').style.display = "block";
+        c =true;
+    }
+        else{
+            document.getElementById('inner3').style.display = "none";
+            c=false;
+        }
     })
 </script>
