@@ -4,13 +4,17 @@ body{
 }
 table, th, tr, td {
     border: 1px solid ;
-    color: aqua;
     border-color: black;
     margin-left: auto;
     margin-right: auto;
   }
-  th, td {
+  table{
+    table-layout: fixed ; width: 45%;
+  }
+  th, tr, td{
     padding: 20px;
+  }
+  td {
     color: black;
     background-color: #EEEEEE;
   }
@@ -25,9 +29,7 @@ table, th, tr, td {
   }
   .column{
     background-color: #E8D5C4;
-  }
-  .time{
-    background-color: #FFF1DC;
+    font-weight: bold;
   }
   .doubleLine{
     text-decoration: underline;
