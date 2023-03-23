@@ -55,6 +55,9 @@ table, th, tr, td {
     border-radius: 50%;
     width: 100px;
 }
+img:hover{
+  width: 120px;
+}
 table .tab1{
   border: none;
 }
@@ -66,8 +69,7 @@ table .tab1{
 .column1 {
   flex: 10%;
   padding: 1px;
-}
-
-table, tr, td, .tab1{
   border: none;
 }
+
+
