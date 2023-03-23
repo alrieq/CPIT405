@@ -13,6 +13,9 @@ table, th, tr, td {
   }
   table{
     table-layout: fixed ; width: 45%;
+      border-collapse: separate;
+      text-indent: initial;
+      border-spacing: 2px;
   }
   th, tr, td{
     padding: 20px;
@@ -48,3 +51,23 @@ table, th, tr, td {
     color: #ff5ea2;
     cursor: pointer;
   }
+  img {
+    border-radius: 50%;
+    width: 100px;
+}
+table .tab1{
+  border: none;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.row {
+  display: flex;
+}
+
+.column1 {
+  flex: 10%;
+  padding: 1px;
+}
+
+table, tr, td, .tab1{
+  border: none;
+}
