@@ -44,4 +44,7 @@ table, th, tr, td {
   .hide {
     display: none;
   }
- 
+  .clickable:hover{
+    color: #ff5ea2;
+    cursor: pointer;
+  }
